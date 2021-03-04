@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '2.6.6'
-gem 'rails', '5.2.4.4'
+gem 'rails', '5.2.4.5'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -206,6 +206,9 @@ group :development, :test do
 
   # image comparison in tests
   gem 'chunky_png'
+
+  # refresh ENVs in CI environment
+  gem 'dotenv', require: false
 end
 
 # Want to extend Zammad with additional gems?
